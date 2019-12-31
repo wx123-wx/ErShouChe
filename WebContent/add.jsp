@@ -18,10 +18,10 @@
     <form method="post" class="form-x" action="">  
       <div class="form-group">
         <div class="label">
-          <label>标题：</label>
+          <label>姓名：</label>
         </div>
         <div class="field">
-          <input type="text" class="input w50" value="" name="title" data-validate="required:请输入标题" />
+          <input type="text" class="input w50" value="" name="title" data-validate="required:请输入姓名" />
           <div class="tips"></div>
         </div>
       </div>
@@ -36,114 +36,51 @@
         </div>
       </div>     
       
-      <if condition="$iscid eq 1">
-        <div class="form-group">
-          <div class="label">
-            <label>分类标题：</label>
-          </div>
-          <div class="field">
-            <select name="cid" class="input w50">
-              <option value="">请选择分类</option>
-              <option value="">产品分类</option>
-              <option value="">产品分类</option>
-              <option value="">产品分类</option>
-              <option value="">产品分类</option>
-            </select>
-            <div class="tips"></div>
-          </div>
-        </div>
-        <div class="form-group">
-          <div class="label">
-            <label>其他属性：</label>
-          </div>
-          <div class="field" style="padding-top:8px;"> 
-            首页 <input id="ishome"  type="checkbox" />
-            推荐 <input id="isvouch"  type="checkbox" />
-            置顶 <input id="istop"  type="checkbox" /> 
-         
-          </div>
-        </div>
-      </if>
-      <div class="form-group">
+    <div class="form-group">
         <div class="label">
-          <label>描述：</label>
+          <label>性别：</label>
         </div>
         <div class="field">
-          <textarea class="input" name="note" style=" height:90px;"></textarea>
+          <input type="text" class="input w50 " value="" name="title" data-validate="required:请输入性别" />
           <div class="tips"></div>
         </div>
       </div>
-      <div class="form-group">
+    <div class="form-group">
         <div class="label">
-          <label>内容：</label>
+          <label>年龄：</label>
         </div>
         <div class="field">
-          <textarea name="content" class="input" style="height:450px; border:1px solid #ddd;"></textarea>
+          <input type="text" class="input w50" value="" name="title" data-validate="required:请输入年龄" />
           <div class="tips"></div>
         </div>
       </div>
+    
+      <div class="form-group">
+        <div class="label">
+          <label>电话号码：</label>
+        </div>
+        <div class="field">
+          <input type="text" class="input w50" value="" name="title" data-validate="required:请输入电话号码" />
+          <div class="tips"></div>
+        </div>
+      </div>
+       <div class="form-group">
+        <div class="label">
+          <label>电子邮件：</label>
+        </div>
+        <div class="field">
+          <input type="text" class="input w50" value="" name="title" data-validate="required:请输入电子邮件" />
+          <div class="tips"></div>
+        </div>
+      </div>
+    
      
-      <div class="clear"></div>
-      <div class="form-group">
-        <div class="label">
-          <label>关键字标题：</label>
-        </div>
-        <div class="field">
-          <input type="text" class="input" name="s_title" value="" />
-        </div>
-      </div>
-      <div class="form-group">
-        <div class="label">
-          <label>内容关键字：</label>
-        </div>
-        <div class="field">
-          <input type="text" class="input" name="s_keywords" value=""/>
-        </div>
-      </div>
-      <div class="form-group">
-        <div class="label">
-          <label>关键字描述：</label>
-        </div>
-        <div class="field">
-          <textarea type="text" class="input" name="s_desc" style="height:80px;"></textarea>
-        </div>
-      </div>
-      <div class="form-group">
-        <div class="label">
-          <label>排序：</label>
-        </div>
-        <div class="field">
-          <input type="text" class="input w50" name="sort" value="0"  data-validate="number:排序必须为数字" />
-          <div class="tips"></div>
-        </div>
-      </div>
-      <div class="form-group">
-        <div class="label">
-          <label>发布时间：</label>
-        </div>
-        <div class="field"> 
-          <script src="js/laydate/laydate.js"></script>
-          <input type="text" class="laydate-icon input w50" name="datetime" onclick="laydate({istime: true, format: 'YYYY-MM-DD hh:mm:ss'})" value=""  data-validate="required:日期不能为空" style="padding:10px!important; height:auto!important;border:1px solid #ddd!important;" />
-          <div class="tips"></div>
-        </div>
-      </div>
-      <div class="form-group">
-        <div class="label">
-          <label>作者：</label>
-        </div>
-        <div class="field">
-          <input type="text" class="input w50" name="authour" value=""  />
-          <div class="tips"></div>
-        </div>
-      </div>
-      <div class="form-group">
-        <div class="label">
-          <label>点击次数：</label>
-        </div>
-        <div class="field">
-          <input type="text" class="input w50" name="views" value="" data-validate="member:只能为数字"  />
-          <div class="tips"></div>
-        </div>
+     
+     
+     
+      
+      
+        
       </div>
       <div class="form-group">
         <div class="label">

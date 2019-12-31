@@ -42,7 +42,7 @@ public class UserServlet extends HttpServlet {
 		switch (method) {
 			case "listAll":
 			{
-				System.out.println("鏌ョ湅鎵�鏈夌殑");
+				System.out.println("用户列表");
 				//鏌ヨ鏁版嵁搴撹幏寰楁墍鏈変簩鎵嬭溅杈嗕俊鎭劧鍚庤繑鍥炲埌椤甸潰涓婃樉绀�
 				List<User> cars=dao.listAllUsers();
 				

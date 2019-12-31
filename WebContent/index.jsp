@@ -32,7 +32,7 @@
   <h2><span class="icon-user"></span>用户管理</h2>
   <ul>
     <li><a href="UserServlet?method=listAll" target="right"><span class="icon-caret-right"></span>用户列表</a></li>
-    <li><a href="UserServlet?method=add" target="right"><span class="icon-caret-right"></span>添加用户</a></li>
+    <li><a href="add.jsp" target="right"><span class="icon-caret-right"></span>添加用户</a></li>
      
   </ul>  
   

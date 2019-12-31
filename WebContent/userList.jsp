@@ -46,8 +46,8 @@
 <section class="rt_wrap content mCustomScrollbar">
  <div class="rt_content">
       <div class="page_title">
-       <h2 class="fl">商品列表示例</h2>
-       <a href="product_detail.html" class="fr top_rt_btn add_icon">添加商品</a>
+       <h2 class="fl">用户列表</h2>
+   
       </div>
       <section class="mtb">
        <select class="select">
