@@ -33,8 +33,7 @@
   <ul>
     <li><a href="UserServlet?method=listAll" target="right"><span class="icon-caret-right"></span>用户列表</a></li>
     <li><a href="UserServlet?method=add" target="right"><span class="icon-caret-right"></span>添加用户</a></li>
-    <li><a href="UserServlet?method=update" target="right"><span class="icon-caret-right"></span>修改用户</a></li>
-    <li><a href="UserServlet?method=delete" target="right"><span class="icon-caret-right"></span>删除用户</a></li>       
+     
   </ul>  
   
    <h2><span class="icon-pencil-square-o"></span>新闻管理</h2>

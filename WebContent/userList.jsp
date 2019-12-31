@@ -43,40 +43,58 @@
 <!--aside nav-->
 
 
-
+<section class="rt_wrap content mCustomScrollbar">
+ <div class="rt_content">
+      <div class="page_title">
+       <h2 class="fl">商品列表示例</h2>
+       <a href="product_detail.html" class="fr top_rt_btn add_icon">添加商品</a>
+      </div>
+      <section class="mtb">
+       <select class="select">
+        <option>下拉菜单</option>
+        <option>菜单1</option>
+       </select>
        <input type="text" class="textbox textbox_225" placeholder="输入产品关键词或产品货号..."/>
        <input type="button" value="查询" class="group_btn"/>
       </section>
       <table class="table">
-       <tr>
-      
+       <tr bgcolor="#19a97b">
+        <th>图片</th>
         <th>姓名</th>
         <th>性别</th>
         <th>年龄</th>
         <th>电话号码</th>
         <th>电子邮件</th>
-        
+        <th>操作</th>
        </tr>
-       <%  List<User>  users=(List<User>)request.getAttribute("users");
-       		for(User c:users){
+       <%  List<User>  cars=(List<User>)request.getAttribute("users");
+       for(User c:cars){
        %>
 	       <tr>
+	        <td class="center"><img src="<%=c.getZhaopian() %>"  style="width: 100px;height: 80px;border:1px solid black;"/> </td>
 	        <td class="center"><%=c.getXingming() %> </td>
 	        <td class="center"><%=c.getXingbie() %></td>
 	        <td class="center"><%=c.getNianling() %></td>
 	        <td class="center"><%=c.getDianhuahaoma() %></td>
 	        <td class="center"><%=c.getDianziyoujian() %></td>
-	  
+	     
 	        <td class="center">
-	         <a href="http://www.deathghost.cn" title="预览" class="link_icon" target="_blank">&#118;</a>
-	         <a href="product_detail.html" title="编辑" class="link_icon">&#101;</a>
-	         <a href="javascript:if(window.confirm('您确认要删除这条数据吗?')){location.href='CarServlet?method=delete&carid=<%=c.getCarid() %>'}" title="删除" class="link_icon">&#100;</a>
+	         <a href="UserServlet?method=getUserInfo&carid=<%=c.getUserid() %>" title="编辑" class="link_icon">&#101;</a>
+	         <a href="javascript:if(window.confirm('您确认要删除这条数据吗?')){location.href='UserServlet?method=delete&userid=<%=c.getUserid() %>'}" title="删除" class="link_icon">&#100;</a>
 	        </td>
 	       </tr>
        <%} %>
     
       </table>
-      
+      <aside class="paging">
+       <a>第一页</a>
+       <a>1</a>
+       <a>2</a>
+       <a>3</a>
+       <a>…</a>
+       <a>1004</a>
+       <a>最后一页</a>
+      </aside>
  </div>
 </section>
 <%  if(request.getAttribute("deleteResult")!=null){
