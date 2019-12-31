@@ -21,7 +21,7 @@ import model.UserDao;
 /**
  * Servlet implementation class CarServlet
  */
-@WebServlet("/CarServlet")
+@WebServlet("/UserServlet")
 @MultipartConfig //閲囩敤娴佺殑鏂瑰紡鎻愪氦琛ㄥ崟鍐呭
 public class UserServlet extends HttpServlet {
 	private UserDao  dao=new UserDao();
